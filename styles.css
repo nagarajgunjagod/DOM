@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f0f0;
 }
 
 header {
@@ -14,23 +15,43 @@ header {
     padding: 20px;
     text-align: center;
     width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#registration-form {
+    flex: 1;
+    margin-right: 20px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin: 20px 0;
+    width: 100%;
 }
 
-label, input, button {
-    margin: 10px 0;
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input {
-    padding: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 16px;
 }
 
 button {
@@ -40,16 +61,32 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
+.divider {
+    width: 2px;
+    background-color: #ccc;
+    margin: 0 20px;
+}
+
+#studentRecords {
+    flex: 2;
+}
+
+#studentRecords h2 {
+    margin-bottom: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 th, td {
@@ -58,6 +95,31 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
+th {
+    background-color: #f4f4f4;
+}
+
 tr:hover {
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
+}
+
+table button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+table button:hover {
+    opacity: 0.8;
+}
+
+table button:nth-child(1) {
+    background-color: #ffffff;
+    color: white;
+}
+
+table button:nth-child(2) {
+    background-color: #ffffff;
+    color: white;
 }

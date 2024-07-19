@@ -1,9 +1,9 @@
-// scripts.js
+
 document.addEventListener('DOMContentLoaded', () => {
     const studentForm = document.getElementById('studentForm');
     const studentsTable = document.getElementById('studentsTable').getElementsByTagName('tbody')[0];
 
-    // Load students from local storage
+    // Loading students from local storage
     loadStudents();
 
     studentForm.addEventListener('submit', (e) => {
@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <td>${student.email}</td>
             <td>${student.contact}</td>
             <td>
-                <button onclick="editStudent(this)">Edit</button>
-                <button onclick="deleteStudent(this)">Delete</button>
+                <button onclick="editStudent(this)"><i class="fa-solid fa-pen-to-square" style="color: #142542;"></i></button>
+                <button onclick="deleteStudent(this)"><i class="fa-solid fa-trash" style="color: #d90202;"></i></button>
             </td>
         `;
     }
